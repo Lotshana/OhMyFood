@@ -1,0 +1,12 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 18px;
+}
+
+header > img{
+    margin: 20px;
+    width: 220px;
+}
