@@ -1,12 +1,63 @@
-body{
+body, h1, h2, p{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h2{
     font-size: 18px;
 }
 
+a{
+    text-decoration: none;
+    color: #000000;
+    height: auto;
+}
+
 header > img{
     margin: 20px;
     width: 220px;
+}
+
+
+/* RESTAURANT CARDS */
+
+#restaurants{
+    margin: 15px;
+}
+
+#restaurants > h1{
+    margin: 10px;
+}
+
+#all-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-restaurant{
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#all-cards img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-infos{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-infos i{
+    font-size: 25px;
+    padding-right: 10px;
 }
