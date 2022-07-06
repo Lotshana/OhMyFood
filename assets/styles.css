@@ -1,4 +1,4 @@
-body, h1, h2, p{
+body, header, h1, h2, p{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -21,17 +21,62 @@ a{
 
 /* HEADER */
 
-header > img{
-    margin: 20px;
-    width: 220px;
+#logo > img{
     text-align: center;
+    margin: 20px 0 15px 0;
+    width: 200px;
+}
+
+#logo{
+    text-align: center;
+}
+
+
+/* SEARCH BAR */
+
+form i{
+    /*padding: 15px 80px;*/
+    font-size: 20px;
+    color: #858585;
+    text-align: center;
+}
+
+form input{
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: center;
+    background-color: #D1D1D1;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* MAIN INFOS */
+
+#main-infos{
+    padding: 30px 20px 50px 20px;
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+button{
+    margin: 30px 0 0 0;
+    padding: 15px 30px;
+    border: none;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 
 /* STEPS */
 
 #stage{
-    margin: 35px 22px 50px 15px;
+    margin: 40px 15px 50px 15px;
 }
 
 #all-steps{
