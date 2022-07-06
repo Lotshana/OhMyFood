@@ -4,6 +4,10 @@ body, h1, h2, p{
     padding: 0;
 }
 
+h1{
+    margin: 10px;
+}
+
 h2{
     font-size: 18px;
 }
@@ -14,23 +18,79 @@ a{
     height: auto;
 }
 
+
+/* HEADER */
+
 header > img{
     margin: 20px;
     width: 220px;
+    text-align: center;
+}
+
+
+/* STEPS */
+
+#stage{
+    margin: 35px 22px 50px 15px;
+}
+
+#all-steps{
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.steps{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 20px;
+}
+
+.steps > p{
+    padding: 7px 10px;
+    border-radius: 30px;
+    background-color: #9356DC;
+    color: #FFFFFF;
+    font-size: 12px;
+    position: absolute;
+    left: 25px;
+}
+
+.steps-infos{
+    display: flex;
+    padding: 25px;
+    width: 100%;
+    background-color: #F9F9F9;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.purple{
+    background-color: rgba(147, 86, 220, .1);
+}
+
+.steps-infos i{
+    margin: 0 25px 0 10px;
+    font-size: 18px;
+    color: #5A5A5A;
+}
+
+.purple i{
+    color: #9356DC;
 }
 
 
 /* RESTAURANT CARDS */
 
 #restaurants{
-    margin: 15px;
-}
-
-#restaurants > h1{
-    margin: 10px;
+    padding: 40px 15px 15px 15px;
+    background-color: #F1F1F1;
 }
 
 #all-cards{
+    margin: 10px 0 35px 0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
