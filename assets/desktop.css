@@ -1,0 +1,19 @@
+/* RESTAURANT CARDS */
+
+
+#restaurants{
+    padding: 0;
+}
+
+#all-cards{
+    margin: 0;
+}
+
+.card-restaurant{
+    margin: 0;
+    width: 0;
+}
+
+#all-cards img{
+    height: 150px;
+}

@@ -1,0 +1,57 @@
+/* HEADER */
+
+#logo{
+    text-align: start;
+}
+
+#logo > img{
+    margin: 40px 0 35px 40px;
+    width: 200px;
+}
+
+
+/* STEPS */
+
+#stage{
+    margin: 40px 40px 50px 40px;
+}
+
+#all-steps{
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.steps > p{
+    position: inherit;
+    left: 0;
+}
+
+.steps-infos{
+    padding: 45px 25px 40px 25px;
+    align-items: center;
+}
+
+.steps-infos i{
+    margin: 0 25px 0 0;
+}
+
+.purple i{
+    color: #9356DC;
+}
+
+
+/* RESTAURANT CARDS */
+
+#restaurants{
+    padding: 30px;
+}
+
+#all-cards{
+    margin: 10px;
+    flex-direction: row;
+}
+
+.card-restaurant{
+    margin: 15px 0;
+    width: 45%;
+}
