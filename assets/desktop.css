@@ -1,4 +1,4 @@
-/* RESTAURANT CARDS */
+/* RESTAURANTS */
 
 
 #restaurants{
@@ -9,11 +9,11 @@
     margin: 0;
 }
 
-.card-restaurant{
-    margin: 0;
-    width: 0;
-}
-
 #all-cards img{
     height: 150px;
+}
+
+.restau-prev{
+    margin: 0;
+    width: 22%;
 }

@@ -1,14 +1,14 @@
-body, header, h1, h2, p{
+body, header, h1, h2, h3, p{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1{
+h1, h2{
     margin: 10px;
 }
 
-h2{
+h3{
     font-size: 18px;
 }
 
@@ -21,16 +21,15 @@ a{
 
 /* HEADER */
 
-#logo > img{
+#logo{
     text-align: center;
+}
+
+#logo > img{
     margin: 20px 0 15px 0;
     width: 200px;
 }
 
-#logo{
-    text-align: center;
-}
- 
 
 /* SEARCH BAR */
 
@@ -55,7 +54,7 @@ form input{
 
 /* MAIN INFOS */
 
-#main-infos{
+#explorer__heading{
     padding: 30px 20px 50px 20px;
     background-color: #F1F1F1;
     text-align: center;
@@ -73,27 +72,26 @@ button{
 }
 
 
-/* STEPS */
+/* FONCTIONNEMENT */
 
-#stage{
+#fonctionnement{
     margin: 40px 15px 50px 15px;
 }
 
 #all-steps{
-    margin: 0 5px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.steps{
+.fonct-etapes{
     display: flex;
     align-items: center;
-    margin: 15px 0 15px 20px;
+    margin: 15px 0 15px 25px;
 }
 
-.steps > p{
+.fonct-etapes > p{
     padding: 7px 10px;
     border-radius: 30px;
     background-color: #9356DC;
@@ -103,7 +101,7 @@ button{
     left: 25px;
 }
 
-.steps-infos{
+.fonct-etapes__heading{
     display: flex;
     padding: 25px;
     width: 100%;
@@ -112,22 +110,22 @@ button{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.purple{
-    background-color: rgba(147, 86, 220, .1);
-}
-
-.steps-infos i{
+.fonct-etapes__heading i{
     margin: 0 25px 0 10px;
     font-size: 18px;
     color: #5A5A5A;
 }
 
-.purple i{
+.fonct-etapes--purple{
+    background-color: rgba(147, 86, 220, .1);
+}
+
+.fonct-etapes--purple i{
     color: #9356DC;
 }
 
 
-/* RESTAURANT CARDS */
+/* RESTAURANTS */
 
 #restaurants{
     padding: 40px 15px 15px 15px;
@@ -135,17 +133,10 @@ button{
 }
 
 #all-cards{
-    margin: 10px 0 35px 0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
-}
-
-.card-restaurant{
-    margin: 10px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #all-cards img{
@@ -155,14 +146,20 @@ button{
     border-radius: 15px 15px 0 0;
 }
 
-.card-infos{
+.restau-prev{
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.restau-prev__infos{
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.card-infos i{
+.restau-prev__infos i{
     font-size: 25px;
     padding-right: 10px;
 }
