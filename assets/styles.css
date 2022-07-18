@@ -232,10 +232,10 @@ footer {
     background-color: #5A5A5A;
 }
 
-footer > a {
+#footer-logo {
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
 
 footer a {

@@ -60,3 +60,8 @@
     margin: 15px 0;
     width: 45%;
 }
+
+.restau-prev__badge {
+    left: 68%;
+    top: -130px;
+}
