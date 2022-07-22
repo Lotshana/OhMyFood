@@ -1,0 +1,26 @@
+/* HEADER */
+
+#logo{
+    text-align: start;
+}
+
+
+/* RESTAURANTS */
+
+#restaurants-preview img{
+    height: 100px;
+}
+
+.restau-prev{
+    margin: 0;
+    width: 22%;
+}
+
+.restau-prev__infos i {
+    padding-right: 0;
+}
+
+.restau-prev__badge {
+    left: 68%;
+    top: -85px;
+}

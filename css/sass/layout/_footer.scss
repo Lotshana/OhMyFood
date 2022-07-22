@@ -1,0 +1,27 @@
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #5A5A5A;
+  }
+  
+  #footer-logo {
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+  
+  footer a {
+    margin: 8px 0 8px 0;
+    color: #FFFFFF;
+  }
+  
+  footer i {
+    font-size: 12px;
+  }
+  
+  footer .fa-utensils {
+    margin: 0 3px 0 2px;
+  }
