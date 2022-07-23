@@ -1,0 +1,19 @@
+/* BUTTON */
+
+button {
+    margin: 30px 0 0 0;
+    padding: 15px 30px;
+    border: none;
+    background: linear-gradient(rgba(255,121,218,1), rgba(147,86,220,1));
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+    transition: box-shadow 1000ms;
+}
+
+button:hover{
+    background: linear-gradient(rgba(255,121,218,0.8), rgba(147,86,220,0.8));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
