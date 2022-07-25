@@ -1,4 +1,5 @@
 @import "./sass/utils/variables";
+@import "./sass/utils/mixins";
 @import "./sass/base/global";
 @import "./sass/layouts/header";
 
@@ -45,10 +46,7 @@ form input {
 }
 
 #fonctionnement-etapes {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include flex-box;
 }
 
 .fonct-etape {
@@ -94,10 +92,7 @@ form input {
 }
 
 #restaurants-preview {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include flex-box;
 }
 
 #restaurants-preview img {
