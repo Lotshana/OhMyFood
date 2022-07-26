@@ -1,5 +1,6 @@
 @import "./sass/utils/variables";
 @import "./sass/utils/mixins";
+@import "./sass/base/typography";
 @import "./sass/base/global";
 @import "./sass/layouts/header";
 
@@ -17,7 +18,7 @@ form {
 
 form i {
     font-size: 20px;
-    color: #858585;
+    color: $color-icons;
 }
 
 form input {
@@ -32,7 +33,7 @@ form input {
 
 #explorer__heading {
     padding: 30px 20px 50px 20px;
-    background-color: #F1F1F1;
+    background-color: $light-grey;
     text-align: center;
 }
 
@@ -69,7 +70,7 @@ form input {
     display: flex;
     padding: 25px;
     width: 100%;
-    background-color: #F9F9F9;
+    background-color: $light-grey;
     border-radius: 15px;
         &:hover{
             background-color: rgba(147, 86, 220, .1);
@@ -80,7 +81,7 @@ form input {
 .fonct-etape__heading i {
     margin: 0 25px 0 10px;
     font-size: 18px;
-    color: #5A5A5A;
+    color: $color-icons;
 }
 
 
@@ -88,7 +89,7 @@ form input {
 
 #restaurants {
     padding: 40px 15px 15px 15px;
-    background-color: #F1F1F1;
+    background-color: $light-grey;
 }
 
 #restaurants-preview {

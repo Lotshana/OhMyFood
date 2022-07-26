@@ -1,21 +1,24 @@
+@import "../utils/variables";
+@import "../base/typography";
+
 /* FOOTER */
 
 footer {
     display: flex;
     flex-direction: column;
     padding: 25px;
-    background-color: #5A5A5A;
+    background-color: $dark-grey;
   }
   
   #footer-logo {
-    font-family: "Shrikhand", cursive;
+    font-family: $font-title;
     font-size: 18px;
     padding-bottom: 8px;
   }
   
   footer a {
     margin: 8px 0 8px 0;
-    color: #FFFFFF;
+    color: $white;
   }
   
   footer i {

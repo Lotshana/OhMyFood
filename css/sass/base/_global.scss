@@ -1,7 +1,10 @@
+@import "../utils/variables";
+@import "../base/typography";
+
 /* GLOBAL */
 
 body, header, h1, h2, h3, p {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-primary;
     margin: 0;
     padding: 0;
 }
@@ -16,10 +19,14 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: $black;
     height: auto;
 }
 
 .box-shadow{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+}
+
+button{
+    border: none;
 }
