@@ -35,14 +35,17 @@ h2 {
   width: 45px;
 }
 
-#restaurant-prev>img {
+#restaurant-prev > img {
   width: 100%;
   height: 225px;
   object-fit: cover;
+  object-position: 0 45%;
 }
 
 #restaurant-menus {
+  @include flex-box;
   position: relative;
+  /*align-items: center;*/
   top: -25px;
   padding: 15px;
   border-radius: 25px 25px 0 0;
@@ -128,7 +131,9 @@ h2 {
 .menus__more-infos {
   @include flex-box;
   flex-direction: row;
-  /*text-overflow: ellipsis;*/
+  /*overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;*/
 }
 
 .menus__price {
@@ -141,5 +146,9 @@ h2 {
 }
 
 @import "../sass/components/buttons";
+
+button{
+  width: 50%;
+}
 
 @import "../sass/layouts/footer";

@@ -72,10 +72,17 @@ h2 {
   height: 225px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0 45%;
+     object-position: 0 45%;
 }
 
 #restaurant-menus {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
+  /*align-items: center;*/
   top: -25px;
   padding: 15px;
   border-radius: 25px 25px 0 0;
@@ -193,7 +200,9 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   flex-direction: row;
-  /*text-overflow: ellipsis;*/
+  /*overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;*/
 }
 
 .menus__price {
@@ -222,6 +231,10 @@ button {
 button:hover {
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  width: 50%;
 }
 
 /* FOOTER */

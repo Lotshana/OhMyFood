@@ -99,10 +99,11 @@ form input {
 }
 
 #restaurants-preview img {
-    height: 200px;
+    height: 180px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+    object-position: 0 60%;
 }
 
 .restau-prev {
@@ -114,7 +115,7 @@ form input {
     padding: 10px;
     position: relative;
     left: calc(100% - 94px);
-    top: -180px;
+    top: -163px;
     background-color: $color-tertiary;
     border-radius: 2px;
     font-weight: 700;
