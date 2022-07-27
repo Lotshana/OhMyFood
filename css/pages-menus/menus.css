@@ -106,22 +106,6 @@ h2 {
     transform: scale(1);
   }
 }
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .heart__1 {
   position: absolute;
   right: 20px;
@@ -164,14 +148,6 @@ h2 {
     transform: scale(1);
   }
 }
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .menus {
   display: flex;
   justify-content: space-between;
@@ -185,7 +161,27 @@ h2 {
   background-color: #FFFFFF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
 }
+.menus:active .menus__selected {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 100%;
+  background-color: #99E2D0;
+  font-size: 25px;
+  color: #FFFFFF;
+  border-radius: 0 15px 15px 0;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
 
+/*@keyframes fadein{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}*/
 .menus__infos {
   padding: 10px;
   justify-content: space-between;
@@ -206,14 +202,7 @@ h2 {
 }
 
 .menus__selected {
-  display: flex;
-  align-items: center;
-  width: 60px;
-  height: 100%;
-  background-color: #99E2D0;
-  font-size: 25px;
-  color: #FFFFFF;
-  border-radius: 0 15px 15px 0;
+  display: none;
 }
 
 /* BUTTON */

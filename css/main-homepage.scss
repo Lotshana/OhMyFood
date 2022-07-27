@@ -74,6 +74,8 @@ form input {
     border-radius: 15px;
         &:hover{
             background-color: rgba(147, 86, 220, .1);
+        }
+        &:hover i{
             color: $color-primary;
         }
 }
@@ -94,7 +96,6 @@ form input {
 
 #restaurants-preview {
     @include flex-box;
-    flex-direction: column;
 }
 
 #restaurants-preview img {
