@@ -94,6 +94,7 @@ form input {
 
 #restaurants-preview {
     @include flex-box;
+    flex-direction: column;
 }
 
 #restaurants-preview img {
