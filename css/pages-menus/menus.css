@@ -41,7 +41,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
 }
 
 header i {
@@ -52,11 +51,14 @@ header i {
 
 /* RESTAURANT-MENU */
 h1 {
+  margin: 10px 0 0 0;
   font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 h2 {
-  margin: 50px 0 15px 0;
+  margin: 40px 0 15px 0;
   padding-bottom: 5px;
   font-size: 18px;
   font-weight: 400;
@@ -94,6 +96,7 @@ h2 {
     transform: scale(1);
   }
 }
+
 @keyframes like {
   from {
     transform: scale(0);
@@ -149,9 +152,11 @@ h2 {
   font-weight: 700;
 }
 
+/* BUTTON */
 button {
-  margin: 30px 0;
+  margin: 30px 0 0 0;
   padding: 15px 30px;
+  border: none;
   background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
   color: #FFFFFF;
   border-radius: 50px;
@@ -171,7 +176,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 25px;
-  background-color: #5A5A5A;
+  background-color: #353535;
 }
 
 #footer-logo {

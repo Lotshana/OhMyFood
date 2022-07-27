@@ -8,7 +8,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
 }
 
 header i {
@@ -20,11 +19,14 @@ header i {
 /* RESTAURANT-MENU */
 
 h1 {
+  margin: 10px 0 0 0;
   font-family: $font-title;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 h2 {
-  margin: 50px 0 15px 0;
+  margin: 40px 0 15px 0;
   padding-bottom: 5px;
   font-size: 18px;
   font-weight: 400;
@@ -50,7 +52,7 @@ h2 {
   @include flex-box;
 }
 
-@import "./sass/utils/keyframes";
+@import "../sass/utils/keyframes";
 
 .heart__1 {
   position: absolute;
@@ -98,6 +100,6 @@ h2 {
   font-weight: 700;
 }
 
-@import "./sass/components/buttons";
+@import "../sass/components/buttons";
 
-@import "./sass/layouts/footer";
+@import "../sass/layouts/footer";
