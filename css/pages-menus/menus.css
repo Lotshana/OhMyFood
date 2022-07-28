@@ -50,6 +50,10 @@ header i {
   font-size: 20px;
 }
 
+main {
+  background-color: #F6F6F6;
+}
+
 /* RESTAURANT-MENU */
 h1 {
   margin: 10px 0 0 0;
@@ -77,12 +81,7 @@ h2 {
 }
 
 #restaurant-menus {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
   position: relative;
-  /*align-items: center;*/
   top: -25px;
   padding: 15px;
   border-radius: 25px 25px 0 0;
@@ -111,6 +110,22 @@ h2 {
   }
   to {
     transform: scale(1);
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .heart__1 {
@@ -147,71 +162,65 @@ h2 {
           animation: fadein 2s;
 }
 
-@keyframes like {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 .menus {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-direction: row;
   margin: 10px 0;
-  /*padding: 10px;*/
   height: 70px;
   border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
 }
-.menus:active .menus__selected {
+.menus__selected {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  width: 60px;
-  height: 100%;
+  width: 0;
   background-color: #99E2D0;
   font-size: 25px;
   color: #FFFFFF;
   border-radius: 0 15px 15px 0;
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+  overflow: hidden;
+  transition-duration: 0.6s;
+}
+.menus:hover .menus__selected {
+  width: 60px;
+}
+.menus__selected i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.menus:hover .menus__selected i {
+  transform: rotate(0);
 }
 
-/*@keyframes fadein{
-  from{
-      opacity: 0;
-  }
-  to{
-      opacity: 1;
-  }
-}*/
 .menus__infos {
   padding: 10px;
-  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  /*& p, & h3{
+    width: calc(100% - 47px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }*/
+}
+
+.menus__infos p, .menus__infos h3 {
+  width: calc(100% - 47px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menus__more-infos {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-direction: row;
-  /*overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;*/
 }
 
 .menus__price {
-  padding-right: 10px;
+  padding: 0 10px;
   font-weight: 700;
-}
-
-.menus__selected {
-  display: none;
 }
 
 /* BUTTON */
@@ -234,7 +243,8 @@ button:hover {
 }
 
 button {
-  width: 50%;
+  display: block;
+  margin: auto;
 }
 
 /* FOOTER */

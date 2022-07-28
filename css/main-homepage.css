@@ -161,13 +161,14 @@ button:hover {
 .restau-prev {
   margin: 10px;
   border-radius: 15px;
+  position: relative;
 }
 
 .restau-prev__badge {
   padding: 10px;
-  position: relative;
+  position: absolute;
   left: calc(100% - 94px);
-  top: -163px;
+  top: 20px;
   background-color: #99E2D0;
   border-radius: 2px;
   font-weight: 700;
@@ -204,6 +205,22 @@ button:hover {
   }
   to {
     transform: scale(1);
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .heart__1 {

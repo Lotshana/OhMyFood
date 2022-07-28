@@ -109,13 +109,14 @@ form input {
 .restau-prev {
     margin: 10px;
     border-radius: 15px;
+    position: relative;
 }
 
 .restau-prev__badge {
     padding: 10px;
-    position: relative;
+    position: absolute;
     left: calc(100% - 94px);
-    top: -163px;
+    top: 20px;
     background-color: $color-tertiary;
     border-radius: 2px;
     font-weight: 700;
