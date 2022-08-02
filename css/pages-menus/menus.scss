@@ -1,5 +1,6 @@
 @import "../sass/utils/variables";
 @import "../sass/utils/mixins";
+@import "./sass/utils/keyframes";
 @import "../sass/base/typography";
 @import "../sass/base/global";
 @import "../sass/layouts/header";
@@ -57,8 +58,6 @@ h2 {
 #restau-menus__heading {
   @include flex-box;
 }
-
-@import "../sass/utils/keyframes";
 
 .heart__1 {
   position: absolute;

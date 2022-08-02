@@ -1,9 +1,71 @@
 @import "./sass/utils/variables";
 @import "./sass/utils/mixins";
+@import "./sass/utils/keyframes";
 @import "./sass/base/typography";
 @import "./sass/base/global";
 @import "./sass/layouts/header";
 
+/* LOADING SPIN */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+/*#load-spin__background{
+    height: 100%;
+    margin: 100%;
+    background-color: $white;
+}*/
+
+#load-spin {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin: -25px 0 0 -25px;
+    background-color: $white;
+    border: 2px solid transparent;
+    border-top-color: $color-primary;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#load-spin:before {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top-color: $color-secondary;
+    animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#load-spin:after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top-color: #99E2D0;
+    animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
 
 /* EXPLORER */
 
@@ -56,7 +118,7 @@ form input {
     margin: 15px 0 15px 25px;
 }
 
-.fonct-etape > p {
+.fonct-etape>p {
     padding: 7px 10px;
     border-radius: 30px;
     background-color: $color-primary;
@@ -72,12 +134,14 @@ form input {
     width: 100%;
     background-color: $light-grey;
     border-radius: 15px;
-        &:hover{
-            background-color: rgba(147, 86, 220, .1);
-        }
-        &:hover i{
-            color: $color-primary;
-        }
+
+    &:hover {
+        background-color: rgba(147, 86, 220, .1);
+    }
+
+    &:hover i {
+        color: $color-primary;
+    }
 }
 
 .fonct-etape__heading i {
@@ -138,29 +202,27 @@ form input {
     padding: 0 30px 30px 0;
 }
 
-@import "./sass/utils/keyframes";
-
-.heart__1{
+.heart__1 {
     position: absolute;
     font-size: 25px;
 }
 
-.heart__2{
+.heart__2 {
     position: absolute;
     opacity: 0;
-    background: linear-gradient(rgba(255,121,218,1), rgba(147,86,220,1));
+    background: linear-gradient(rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.heart:hover .heart__2{
+.heart:hover .heart__2 {
     font-size: 25px;
     opacity: 1;
     animation: like 3s;
 }
 
-.heart:hover .heart__1{
+.heart:hover .heart__1 {
     opacity: 0;
 }
 
