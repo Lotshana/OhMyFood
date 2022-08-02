@@ -112,22 +112,6 @@ h2 {
     transform: scale(1);
   }
 }
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .heart__1 {
   position: absolute;
   right: 20px;
@@ -157,11 +141,27 @@ h2 {
   opacity: 0;
 }
 
-.entree {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+@-webkit-keyframes fadein {
+  0% {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+@keyframes fadein {
+  0% {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .menus {
   display: flex;
   justify-content: space-between;
@@ -170,6 +170,10 @@ h2 {
   border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+  -webkit-animation: fadein 3s ease-in;
+          animation: fadein 3s ease-in;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 .menus__selected {
   display: flex;
@@ -194,18 +198,62 @@ h2 {
   transform: rotate(0);
 }
 
+/* DELAY ANIMATION FADEIN */
+.delay-1 {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.delay-8 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.delay-9 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.delay-10 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
 .menus__infos {
   padding: 10px;
   overflow: hidden;
   width: 100%;
-  /*& p, & h3{
-    width: calc(100% - 47px);
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }*/
 }
-
 .menus__infos p, .menus__infos h3 {
   width: calc(100% - 47px);
   white-space: nowrap;

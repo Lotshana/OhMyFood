@@ -39,7 +39,7 @@ h2 {
   width: 45px;
 }
 
-#restaurant-prev>img {
+#restaurant-prev > img {
   width: 100%;
   height: 225px;
   object-fit: cover;
@@ -88,8 +88,15 @@ h2 {
   opacity: 0;
 }
 
-.entree {
-  animation: fadein 2s;
+@keyframes fadein{
+  0%{
+      transform: translateY(5px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
 .menus {
@@ -100,6 +107,8 @@ h2 {
   border-radius: 15px;
   background-color: $white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+  animation: fadein 3s ease-in;
+  animation-fill-mode: backwards;
   &__selected {
     display: flex;
     justify-content: space-around;
@@ -127,23 +136,58 @@ h2 {
   }
 }
 
+/* DELAY ANIMATION FADEIN */
+
+.delay-1{
+  animation-delay: 0;
+}
+
+.delay-2{
+  animation-delay: 0.2s;
+}
+
+.delay-3{
+  animation-delay: 0.4s;
+}
+
+.delay-4{
+  animation-delay: 0.6s;
+}
+
+.delay-5{
+  animation-delay: 0.8s;
+}
+
+.delay-6{
+  animation-delay: 1s;
+}
+
+.delay-7{
+  animation-delay: 1.2s;
+}
+
+.delay-8{
+  animation-delay: 1.4s;
+}
+
+.delay-9{
+  animation-delay: 1.6s;
+}
+
+.delay-10{
+  animation-delay: 1.8s;
+}
+
 .menus__infos {
   padding: 10px;
   overflow: hidden;
   width: 100%;
-  /*& p, & h3{
+  & p, & h3{
     width: calc(100% - 47px);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-  }*/
-}
-
-.menus__infos p, .menus__infos h3{
-  width: calc(100% - 47px);
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  }
 }
 
 .menus__more-infos {
