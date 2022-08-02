@@ -42,6 +42,7 @@
 }
 
 #load-spin:before {
+    content: "";
     position: absolute;
     top: 7px;
     right: 7px;
@@ -55,6 +56,7 @@
 }
 
 #load-spin:after {
+    content: "";
     position: absolute;
     top: 15px;
     right: 15px;
@@ -62,7 +64,7 @@
     left: 15px;
     border: 2px solid transparent;
     border-radius: 50%;
-    border-top-color: #99E2D0;
+    border-top-color: $color-tertiary;
     animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
