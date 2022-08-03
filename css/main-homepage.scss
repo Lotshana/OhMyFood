@@ -19,16 +19,17 @@
     }
 }
 
-@keyframes fadeout{
-  75%{
-    opacity: 1;
-  }
-  100%{
-      opacity: 0;
-  }
+@keyframes fadeout {
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-#load-spin__background{
+#load-spin__background {
     /*position: fixed;
     z-index: 1;*/
     height: 100%;
@@ -239,6 +240,100 @@ form input {
 
 .heart:hover .heart__1 {
     opacity: 0;
+}
+
+/* RESPONSIVE TABLETTE */
+
+@media (min-width: 768px) {
+
+    /* HEADER */
+
+    #logo>img {
+        margin: 30px;
+        width: 200px;
+    }
+
+
+    /* FONCTIONNEMENT */
+
+    #fonctionnement {
+        margin: 40px;
+    }
+
+    #fonctionnement-etapes {
+        flex-direction: row;
+    }
+
+    .fonct-etape {
+        margin: 5px;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .fonct-etape>p {
+        position: inherit;
+        left: 0;
+    }
+
+    .fonct-etape__heading {
+        width: auto;
+        align-items: center;
+    }
+
+    .fonct-etape__heading i {
+        margin: 0 25px 0 0;
+    }
+
+    .fonct-etape--purple i {
+        color: #9356DC;
+    }
+
+    /* RESTAURANTS */
+
+    #restaurants {
+        padding: 40px;
+    }
+
+    #restaurants-preview {
+        margin: 10px;
+        flex-direction: row;
+    }
+
+    #restaurants-preview img {
+        height: 150px;
+    }
+
+    .restau-prev {
+        margin: 15px 0;
+        width: 45%;
+    }
+}
+
+/* RESPONSIVE DESKTOP */
+
+@media (min-width: 992px) {
+
+    /* HEADER */
+
+    #logo {
+        text-align: start;
+    }
+
+
+    /* RESTAURANTS */
+
+    #restaurants-preview img {
+        height: 100px;
+    }
+
+    .restau-prev {
+        margin: 0;
+        width: 22%;
+    }
+
+    .restau-prev__infos i {
+        padding-right: 0;
+    }
 }
 
 @import "./sass/layouts/footer";
