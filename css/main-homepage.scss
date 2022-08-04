@@ -26,17 +26,8 @@
 
     100% {
         opacity: 0;
+        visibility: hidden;
     }
-}
-
-#load-spin__background {
-    /*position: fixed;
-    z-index: 1;*/
-    height: 100%;
-    margin: 100%;
-    background-color: $white;
-    animation: fadeout 3s ease-in;
-    animation-fill-mode: backwards;
 }
 
 #load-spin {
@@ -53,34 +44,44 @@
     border-radius: 50%;
     animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-}
 
-#load-spin:before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    bottom: 7px;
-    left: 7px;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    border-top-color: $color-secondary;
-    animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-}
+    &__background {
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-color: $white;
+        animation: fadeout 3s ease-in;
+        animation-fill-mode: forwards;
+    }
 
-#load-spin:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    border-top-color: $color-tertiary;
-    animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        bottom: 7px;
+        left: 7px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        border-top-color: $color-secondary;
+        animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        border-top-color: $color-tertiary;
+        animation: spin 1.5s linear infinite;
+        animation: spin 1.5s linear infinite;
+    }
 }
 
 /* EXPLORER */

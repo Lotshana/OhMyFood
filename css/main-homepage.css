@@ -80,6 +80,7 @@ button {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes fadeout {
@@ -88,20 +89,9 @@ button {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
-#load-spin__background {
-  /*position: fixed;
-  z-index: 1;*/
-  height: 100%;
-  margin: 100%;
-  background-color: #FFFFFF;
-  -webkit-animation: fadeout 3s ease-in;
-          animation: fadeout 3s ease-in;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
 #load-spin {
   display: block;
   position: absolute;
@@ -118,7 +108,17 @@ button {
           animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
-
+#load-spin__background {
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  -webkit-animation: fadeout 3s ease-in;
+          animation: fadeout 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
 #load-spin:before {
   content: "";
   position: absolute;
@@ -133,7 +133,6 @@ button {
           animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
-
 #load-spin:after {
   content: "";
   position: absolute;
