@@ -53,6 +53,11 @@ button {
   width: 200px;
 }
 
+/* HEADER */
+header > i {
+  display: none;
+}
+
 /* LOADING SPIN */
 @-webkit-keyframes spin {
   from {
@@ -155,7 +160,7 @@ form {
   height: 50px;
   text-align: center;
   background-color: #D1D1D1;
-  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.18) inset;
+  box-shadow: -1px 2px 5px 0pxs rgba(0, 0, 0, 0.18) inset;
 }
 
 form i {
@@ -248,7 +253,7 @@ button:hover {
 
 /* RESTAURANTS */
 #restaurants {
-  padding: 40px 15px 15px 15px;
+  padding: 40px 15px 50px 15px;
   background-color: #F6F6F6;
 }
 

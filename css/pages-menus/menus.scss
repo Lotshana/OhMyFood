@@ -1,6 +1,6 @@
 @import "../sass/utils/variables";
 @import "../sass/utils/mixins";
-@import "./sass/utils/keyframes";
+@import "../sass/utils/keyframes";
 @import "../sass/base/typography";
 @import "../sass/base/global";
 @import "../sass/layouts/header";
@@ -13,7 +13,7 @@ header {
 
 header i {
   position: absolute;
-  left: 20px;
+  left: 20spx;
   top: 28px;
   font-size: 20px;
 }
@@ -207,5 +207,15 @@ button{
   display: block;
   margin: auto;
 }
+
+/* RESPONSIVE TABLETTE */
+
+@media (min-width: 768px) {
+  .menus{
+    width: 30%;
+    flex-direction: row;
+  }
+}
+
 
 @import "../sass/layouts/footer";

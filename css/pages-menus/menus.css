@@ -1,3 +1,19 @@
+@-webkit-keyframes like {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes like {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 /* GLOBAL */
 body, header, h1, h2, h3, p {
   font-family: "Roboto", sans-serif;
@@ -45,7 +61,7 @@ header {
 
 header i {
   position: absolute;
-  left: 20px;
+  left: 20spx;
   top: 28px;
   font-size: 20px;
 }
@@ -95,23 +111,6 @@ h2 {
   flex-wrap: wrap;
 }
 
-@-webkit-keyframes like {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes like {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 .heart__1 {
   position: absolute;
   right: 20px;
@@ -296,6 +295,13 @@ button {
   margin: auto;
 }
 
+/* RESPONSIVE TABLETTE */
+@media (min-width: 768px) {
+  .menus {
+    width: 30%;
+    flex-direction: row;
+  }
+}
 /* FOOTER */
 footer {
   display: flex;
