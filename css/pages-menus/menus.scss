@@ -13,7 +13,7 @@ header {
 
 header i {
   position: absolute;
-  left: 20spx;
+  left: 20px;
   top: 28px;
   font-size: 20px;
 }
@@ -211,8 +211,13 @@ button{
 /* RESPONSIVE TABLETTE */
 
 @media (min-width: 768px) {
+  .menus__flexbox{
+    display: flex;
+    justify-content: space-between;
+  }
+
   .menus{
-    width: 30%;
+    width: 32%;
     flex-direction: row;
   }
 }
