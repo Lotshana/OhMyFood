@@ -300,6 +300,7 @@ button {
   .menus__flexbox {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .menus {
     width: 32%;
