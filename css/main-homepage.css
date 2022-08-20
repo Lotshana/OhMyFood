@@ -55,7 +55,7 @@ button {
 
 /* HEADER */
 header > i {
-  display: none;
+  font-size: 0;
 }
 
 /* LOADING SPIN */
