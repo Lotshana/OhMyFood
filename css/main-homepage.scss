@@ -5,12 +5,6 @@
 @import "./sass/base/global";
 @import "./sass/layouts/header";
 
-/* HEADER */
-
-header > i{
-    font-size: 0;
-}
-
 /* LOADING SPIN */
 
 @keyframes spin {

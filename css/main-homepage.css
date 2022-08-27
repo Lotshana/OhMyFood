@@ -53,11 +53,6 @@ button {
   width: 200px;
 }
 
-/* HEADER */
-header > i {
-  font-size: 0;
-}
-
 /* LOADING SPIN */
 @-webkit-keyframes spin {
   from {
