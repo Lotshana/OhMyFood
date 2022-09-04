@@ -199,8 +199,8 @@ h2 {
 
 /* DELAY ANIMATION APPARITION */
 .delay-1 {
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  -webkit-animation-delay: 0.01s;
+          animation-delay: 0.01s;
 }
 
 .delay-2 {
